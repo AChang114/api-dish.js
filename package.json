@@ -1,10 +1,9 @@
 {
   "name": "api-dish-js",   “名称”:“api-dish-js”,
   "version": "1.0.0",   “版本”:“1.0.0”,
-  "description": "中转API for 百度菜品识别",
+  "description": "API for Baidu dish recognition",
   "scripts": {   “脚本”:{
-    "dev": "vercel dev",   dev: vercel dev；
-    "start": "node api/dish.js"“start”： “node api/dish.js”
+    "dev": "vercel dev"
   },
   "dependencies": {   “依赖”:{
     "node-fetch": "^2.6.7"   :“node-fetch ^ 2.6.7”
