@@ -1,0 +1,31 @@
+export default   默认的 async function handler(req, res) {导出默认异步函数handler(req, res) {
+  if (req.method !== 'POST') {如果(点播。方法!== ' post ') {
+    return res.status(405).json({ error: 'Method not allowed' });返回res.status(405)。json({错误：‘方法不允许’})；
+  }
+
+  try {   尝试{
+    const { image, top_num = 3 } = req.body;Const {image, top_num = 3} = req.body；
+    
+    // 从环境变量获取token
+    const access_token = process.env.BAIDU_ACCESS_TOKEN;access_token = process.env.BAIDU_ACCESS_TOKEN；
+    
+    const response = await fetch(Const response = await fetch（）
+      `https://aip.baidubce.com/rest/2.0/image-classify/v2/dish?access_token=${access_token}`,“https://aip.baidubce.com/rest/2.0/image-classify/v2/dish?access_token= $ {access_token}”,
+      {
+        method: 'POST',   方法:“文章”,
+        headers: {   标题:{
+          'Content-Type': 'application/x-www-form-urlencoded',“内容类型”:“应用程序/ x-www-form-urlencoded”,
+        },
+        body: new URLSearchParams({
+          image: image,   图片:图片,
+          top_num: top_num.toString(),
+        }),
+      }
+    );
+
+    const data = await response.json();Const data = await response.json()；
+    res.status(200).json(data);res.status (200) . json(数据);
+  } catch (error) {
+    res.status(500).json({ error: 'Internal server error' });res.status(500)。json({error: ‘内部服务器错误’})；
+  }
+}
