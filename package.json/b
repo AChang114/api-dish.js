@@ -1,0 +1,12 @@
+{
+     “名称”:“a   一个   一个pi   我   我-di   我   我s   年代   年代h-js   年代   年代”,"na   一个   一个m   米   米e": "a   一个   一个pi   我   我-di   我   我s   年代   年代h-js   年代   年代",
+     “版本”:“1.0.0”,"vers   年代   年代i   我   我on": "1.0.0",
+  "des   年代   年代cri   我   我pti   我   我on": "中转A   一个   一个PI   我   我 for 百度菜品识别",
+     “脚本”:{"s   年代   年代cri   我   我pts   年代   年代": {
+       dev: vercel dev；"dev": "vercel dev",
+    “s   年代   年代ta   一个   一个rt”： “node a   一个   一个pi   我   我/di   我   我s   年代   年代h.js   年代   年代”"s   年代   年代ta   一个   一个rt": "node a   一个   一个pi   我   我/di   我   我s   年代   年代h.js   年代   年代"
+  },
+     “依赖”:{"dependenci   我   我es   年代   年代": {
+       :“node-fetch ^ 2.6.7”"node-fetch": "^2.6.7"
+  }
+}
